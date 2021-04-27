@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Button</title>
+        <style>
+            #btn {
+                width: 96px;
+                height: 64px;
+                font-size: 24px;
+            }
+        </style>
+    </head>
+    <body>
+        <button id='btn' onclick="increment()">0</button>
+        <script>
+            function increment() {
+                console.log("function called!");
+                var button = document.getElementById("btn").innerHTML;
+                new_value = parseInt(button) + 1;
+                document.getElementById("btn").innerHTML = new_value;
+            }
+        </script>
+    </body>
+</html>
